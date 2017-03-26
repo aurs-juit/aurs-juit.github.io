@@ -1,0 +1,289 @@
+::selection {
+  color: white;
+  background: #004dff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  color: white;
+  background: #004dff; /* Gecko Browsers */
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle{
+  stroke: #004dff;
+}
+
+.color-overlay {
+    
+}
+
+a:hover {
+    color: #004dff;
+}
+
+a:active {
+    color: #004dff;
+}
+
+a:focus{
+  color: #004dff;
+}
+
+
+.sticky-navigation{
+
+    /*border-bottom: solid 1px #004dff ;*/
+}
+
+.sticky-navigation .main-navigation .current a{
+    color: #004dff;
+}
+
+.sticky-navigation .main-navigation li a:hover{
+  color: #004dff;
+  background: none;
+}
+
+.sticky-navigation .main-navigation li a:active{
+  color: #004dff;
+  background: none;
+}
+
+.sticky-navigation .main-navigation li a:focus{
+  color: #004dff;
+  background: none;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: #004dff;
+}
+
+
+.services .single-service .icon-container .icon{
+
+    color: #004dff;
+}
+
+.hvr-ripple-out:before{
+    border: #004dff solid 1px;
+}
+ 
+.progress .bar {
+    background: #004dff;
+}
+
+ .pf-filter li.active{
+  color: #004dff;
+}
+
+.component-hover{
+    background-color: rgba(0, 77, 255, .7);
+}
+
+.portfolio-project-info li a:hover {
+    color: #004dff;
+}
+
+.testimonials .owl-theme .owl-controls .owl-page span {
+    background: #004dff;
+    border-radius: 20%;
+    max-height: 2px;
+}
+
+.clients .owl-theme .owl-controls .owl-page span {
+    background: #004dff;
+    border-radius: 20%;
+    max-height: 2px;
+}
+
+.component-hover {
+    border: 2px solid #004dff;
+    background-color: rgba(0, 77, 255, .7);
+}
+
+.component-hover .s-link a {
+    text-align: center;
+    color: white;
+}
+
+.desk p {
+    color: white;
+}
+
+.team .owl-theme .owl-controls .owl-page span {
+    background: #004dff;
+}
+
+.special-package{
+  color: #004dff;
+}
+
+.special-package .price h2,
+.special-package .price h2 span,
+.special-package .price p 
+{
+  color: #004dff;
+}
+
+.special-package .hvr-bounce-to-right:before{
+  background: #004dff;
+}
+
+.special-package .single-package{
+  border: 1px solid #004dff;
+}
+
+.special-package .btn-price{
+  color: #004dff;
+  border-color: #004dff;
+}
+
+.special-package .btn-price:hover{
+  color: #fff;
+}
+
+
+.btn-lines .line-top,
+.btn-lines .line-bottom,
+.btn-lines .line-left,
+.btn-lines .line-right {
+  background: #004dff;
+}
+
+.funfactor .icon-container i {
+    color: #004dff;
+}
+
+.blog-title :hover{
+    color: #004dff;
+}
+
+.blog-post-title :hover {
+    color: #004dff; 
+}
+
+.author a :hover {
+  color: #004dff;
+  
+ }
+
+ .read-more :hover{
+    color: #004dff;
+ }
+
+.blog-list-item-detail a:hover{
+  color: #004dff;
+}
+
+.blog-item-detail a:hover{
+  color: #004dff;
+}
+
+.input-field:active{
+  border: 1px solid  #004dff;
+  border-radius: 5px;
+}
+
+.input-field:focus {
+  border-color: #004dff;
+}
+
+.clearlist li a:hover  {
+    color: #004dff;
+}
+
+.tags a:hover {
+   color: #004dff; 
+  border: 1px solid #004dff;
+}
+
+.article-nav a i:hover{
+  color: #004dff;
+}
+
+/**/
+
+.standard-button {
+    background: #B58C82;
+}
+
+.standard-button2 {
+    background:  #004dff;
+}
+
+.standard-button2:hover {
+    background: #fff;
+}
+
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open .dropdown-toggle.btn-primary {
+    background: #005885;
+    border-color: inherit;
+}
+
+.colored-line,
+.colored-line-left {
+    background:  #004dff;
+}
+
+.main-color {
+    color:  #004dff;
+}
+
+.theme-color {
+    color:  #004dff;
+}
+
+.theme-color-bg {
+    background-color:  #004dff;
+}
+
+.color-bg {
+	background: rgb(127,111,91);
+	color: #FFFFFF;
+}
+
+.contact .contact-button {
+    border: 2px solid #656565;
+    color: #958257;
+}
+
+.contact .contact-button:hover {
+    background:  #004dff;
+}
+
+.contact .contact-box .input-box:active,
+.contact .contact-box .textarea-box:active,
+.contact .contact-box .input-box:focus,
+.contact .contact-box .textarea-box:focus {
+    border: 1px solid  #004dff;
+    color: #111;
+}
+
+.social-icons li a:hover {
+    color:  #004dff;
+}
+
+.comment-reply .contact-box .input-box:active,
+.comment-reply .contact-box .textarea-box:active,
+.comment-reply .contact-box .input-box:focus,
+.comment-reply .contact-box .textarea-box:focus {
+    border: 1px solid  #004dff;
+    color: #111;
+}
+
+.contact  .contact-address i{
+  color: #004dff;
+}
+
+.blog-item-detail a:hover {
+  color: #004dff;
+}
+
+.nav-transparent{
+  border-bottom: solid 1px transparent;
+}
+
+.list-tweets li a:hover{
+  color: #004dff;
+}

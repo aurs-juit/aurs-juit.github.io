@@ -1,0 +1,98 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
+
+body {
+  background:#249991;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:100;
+  line-height:1;
+  font-size:20px;
+  color:#222;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+.container {
+  margin:0 auto;
+  width:30em;
+  @extend .clearfix;
+}
+.today {
+  background:#4ecdc4;
+  color:white;
+  padding:1em 0;
+  float:left;
+  width:15em;
+  min-height:17.2em;
+  .day-week {
+    color:rgba(white,0.8);
+    margin:1em 0 2em;
+  }
+  .day-num {
+    font-size:8em;
+  }
+}
+.calendar {
+  float:left;
+  width:15em;
+  min-height:17em;
+  background:#f5f5f5;
+  padding:1.25em 1em 2em;
+  @extend .clearfix;
+  .month {
+    color:#249991;
+    font-weight:700;
+    margin:0.75em 0 1em;
+  }
+  .weekday { 
+    color:#e42355;
+    font-weight:700;
+    font-size:0.8em;
+  }
+  .day {
+    font-size: 0.8em;
+    font-weight: 700;
+    color:#555555;
+  }
+  .weekday, .day {
+    float:left;
+    width: 12%;
+    margin:0.25em 1%;
+    line-height:1.5em;
+    vertical-align:middle;
+    &.now {
+      position:relative;
+      color:#e42355;
+      &:before {
+        content:"";
+        width:1.75em;
+        height:1.75em;
+        border:0.2em solid #e42355;
+        position:absolute;
+        border-radius:100%;
+        left:-0.125em;
+        top:-0.25em;
+      }
+    }
+  }
+}
+
+.mute {color:rgba(black,0.25);}
+
+
+@media (max-width: 38em) {
+  .container {
+    max-width:100%
+  }
+  .today, .calendar {
+    width:75%;
+    float:none;
+    margin:0 auto;
+    min-height:0;
+  }
+  .calendar {
+    .weekday, .day {display:none;}
+  }
+}

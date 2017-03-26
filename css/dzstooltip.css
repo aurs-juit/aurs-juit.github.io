@@ -1,0 +1,279 @@
+/*
+=========
+TOOLTIP STYING
+
+projects where this is used - dzs calendar, dzs zoomsounds
+==========
+*/
+/* --- functional styling */
+.dzstooltip-con.js {
+  position: relative; }
+
+.dzstooltip-con .dzstooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: all;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: all;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out; }
+
+.with-tooltip {
+  position: relative;
+  display: inline-block; }
+
+/* --- estethic styling */
+.with-tooltip > .dzstooltip, .dzstooltip {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  color: #111111;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: all;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: all;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.dzstooltip {
+  opacity: 1;
+  visibility: visible;
+  display: inline-block; }
+
+.dzstooltip {
+  position: relative; }
+
+.with-tooltip > .dzstooltip {
+  position: absolute;
+  top: auto;
+  bottom: 150%;
+  overflow: visible;
+  left: -10px;
+  color: #111111; }
+
+.interactive .with-tooltip > .dzstooltip {
+  pointer-events: auto; }
+
+.with-tooltip:hover .dzstooltip, .dzstooltip.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 140%;
+  top: auto; }
+
+.with-tooltip .aux-padder {
+  position: absolute;
+  top: -10px;
+  height: 15px;
+  left: -12px;
+  width: 30px; }
+
+/* -- arrows -> functional + estethic*/
+.with-tooltip > .dzstooltip:after, .dzstooltip:after, .with-tooltip > .dzstooltip:before, .dzstooltip:before {
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  content: " ";
+  height: 0;
+  width: 0; }
+
+.with-tooltip > .dzstooltip:after, .dzstooltip:after, .with-tooltip > .dzstooltip:before, .dzstooltip:before {
+  top: 100%; }
+
+/*====arrows position=*/
+.with-tooltip > .dzstooltip:before, .dzstooltip:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-width: 6px; }
+
+.with-tooltip > .dzstooltip:before, .dzstooltip:before {
+  border-top-color: rgba(0, 0, 0, 0.3);
+  left: 12.5px;
+  margin-left: -2.5px; }
+
+.with-tooltip > .dzstooltip:after, .dzstooltip:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 5px; }
+
+.with-tooltip > .dzstooltip:after, .dzstooltip:after {
+  border-top-color: #fafafa;
+  left: 12.5px;
+  margin-left: -2.5px; }
+
+.with-tooltip.arrow-left > span:first-child {
+  box-shadow: 0 0 0 0; }
+
+.with-tooltip.arrow-left > span:first-child {
+  left: 200%;
+  right: auto;
+  bottom: auto;
+  top: 0px; }
+
+.with-tooltip.arrow-left > span:first-child:after, .dzstooltip.arrow-left:after, .with-tooltip.arrow-left > span:first-child:before, .dzstooltip.arrow-left:before {
+  top: 0%; }
+
+.with-tooltip.arrow-left > span:first-child:after, .dzstooltip.arrow-left:after {
+  border-width: 5px;
+  border-color: transparent transparent transparent transparent;
+  border-right-color: transparent;
+  top: 10px;
+  margin: 0 0 0 0;
+  left: -10px;
+  margin-top: -5px; }
+
+/*====the big arrow pointer*/
+.with-tooltip.arrow-left > span:first-child:before, .dzstooltip.arrow-left:before {
+  border-width: 6px;
+  border-color: transparent transparent transparent transparent;
+  border-right-color: rgba(0, 0, 0, 0.3);
+  top: 10px;
+  left: -10px;
+  margin-top: -6px;
+  z-index: 0; }
+
+.with-tooltip.arrow-right > span:first-child {
+  box-shadow: 0 0 0 0;
+  min-width: 100px; }
+
+.with-tooltip.arrow-right > span:first-child {
+  left: auto;
+  right: 200%;
+  bottom: auto;
+  top: 0px; }
+
+.arrow-right.with-tooltip:hover span:first-child, .dzstooltip.arrow-right.active {
+  left: auto;
+  right: 150%;
+  bottom: auto;
+  top: 0px; }
+
+.with-tooltip.arrow-right > span:first-child:after, .dzstooltip.arrow-right:after, .with-tooltip.arrow-right > span:first-child:before, .dzstooltip.arrow-right:before {
+  top: 0%; }
+
+.with-tooltip.arrow-right > span:first-child:after, .dzstooltip.arrow-right:after {
+  border-width: 5px;
+  border-color: transparent transparent transparent transparent;
+  border-left-color: transparent;
+  top: 9px;
+  margin: 0 0 0 0;
+  left: auto;
+  right: -10px;
+  margin: 0 0 0 0;
+  margin-top: -5px; }
+
+.with-tooltip.arrow-right > span:first-child:before, .dzstooltip.arrow-right:before {
+  border-width: 8px;
+  border-color: transparent transparent transparent transparent;
+  border-left-color: rgba(0, 0, 0, 0.3);
+  top: 9px;
+  left: auto;
+  right: -16px;
+  margin: 0 0 0 0;
+  margin-top: -8px; }
+
+ /*
+        margin:0 0 0 0;
+*/
+.with-tooltip.arrow-top > span:first-child {
+  top: auto;
+  bottom: auto;
+  top: 150%;
+  min-width: 75px; }
+
+.arrow-top.with-tooltip:hover span:first-child, .dzstooltip.arrow-top.active {
+  left: auto;
+  top: auto;
+  bottom: auto;
+  top: 100%;
+  margin-top: 5px; }
+
+.with-tooltip.arrow-top > span:first-child:after, .dzstooltip.arrow-top:after, .with-tooltip.arrow-top > span:first-child:before, .dzstooltip.arrow-top:before {
+  top: 0%; }
+
+.with-tooltip.arrow-top > span:first-child:before, .dzstooltip.arrow-top:before {
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  border-color: transparent transparent transparent transparent;
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+  left: 20%;
+  top: auto;
+  bottom: 100%;
+  margin-top: -8px;
+  margin-left: -2.5px; }
+
+.with-tooltip.arrow-top > span:first-child:after, .dzstooltip.arrow-top:after {
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  border-width: 5px;
+  border-color: transparent transparent transparent transparent;
+  border-bottom-color: #fafafa;
+  left: 20%;
+  left: calc(20% + 1px);
+  top: auto;
+  bottom: 100%;
+  margin-top: -5px;
+  margin-left: -2.5px; }
+
+.label {
+  border-radius: 0; }
+
+/*
+=========
+TOOLTIP STYING
+END
+==========
+*/
+.dzstooltip.skin-black {
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #eeeeee;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  line-height: 1.5rem; }
+
+.dzstooltip.skin-black:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-width: 6px; }
+
+.dzstooltip.skin-black:before {
+  border-top-color: rgba(0, 0, 0, 0.5);
+  left: 12.5px;
+  margin-left: -2.5px; }
+
+.dzstooltip.skin-black:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 5px; }
+
+.dzstooltip.skin-black:after {
+  border-top-color: rgba(0, 0, 0, 0.85);
+  left: 12.5px;
+  margin-left: -2.5px; }
