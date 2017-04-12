@@ -119,8 +119,8 @@
         });
 
         $('.carousel').carousel({
-          interval: 3000,
-          pause: "false"
+          interval: 6000,
+          pause: "true"
         });
     }
 
