@@ -119,7 +119,7 @@
         });
 
         $('.carousel').carousel({
-          interval: 8000,
+          interval: 7000,
           pause: "true"
         });
     }
@@ -408,7 +408,7 @@
         }
         if($("#content-slider").length > 0){
             $("#content-slider").owlCarousel({
-                slideSpeed: 350,
+                slideSpeed: 600,
                 paginationSpeed: 800,
                 autoPlay: 5000,
                 singleItem: true,
@@ -427,7 +427,7 @@
         if($("#team-carousel").length > 0){
             $("#team-carousel").owlCarousel({
                 loop: true,
-                autoPlay: 2000, //Set AutoPlay to 3 seconds
+                autoPlay: 8000, //Set AutoPlay to 3 seconds
                 items : 5,
                 itemsDesktop : [1199,5],
                 itemsDesktopSmall : [979,5]
@@ -447,8 +447,8 @@
         */
         if($("#tt-carousel").length > 0){
             $('#tt-carousel').carousel({
-                interval: 5000,
-                pause: "false"
+                interval: 9000,
+                pause: "true"
             });
         }
 
