@@ -668,21 +668,21 @@ header .only-logo .navbar .navbar-header {
 }
 
 .carousel-indicators li {
-    margin: 0;
+    margin: 12px;
     width: 12px;
     height: 4px;
-    border: 1px solid #000;
-    border-radius: 0px;
-    margin-bottom: 10%;
+    border: 6px solid #fff;
+    border-radius: 100px;
+    margin-bottom: 0%;
 }
 
  .carousel-indicators .active {
-    margin: 0;
+    margin: 12px;
     width: 12px;
     height: 4px;
     background-color: lightgray;
     border-radius: 0px;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
   }
 
 .text-black-4{
