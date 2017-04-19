@@ -71,8 +71,8 @@ strong{
 
 a {
    color: #000;
-    -webkit-transition: all ease 0.25s;
-            transition: all ease 0.25s;
+    -webkit-transition: all ease 1.0s;
+            transition: all ease 1.0s;
 }
 
 a:hover {
@@ -303,7 +303,7 @@ p { color: #333;
 }
 
 .bg-white{
-  background: #fff;
+  background: #000;
 }
 
 .section-top{
@@ -428,8 +428,8 @@ header .color-overlay {
 /* Initial animation of header elements */
 .loading .ip-loader {
   opacity: 1;
-  -webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
-  animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+  -webkit-animation: animInitialHeader 0.2s cubic-bezier(0.8,0,0.3,1) both;
+  animation: animInitialHeader 0.2s cubic-bezier(0.8,0,0.3,1) both;
 }
 
 .loading .ip-loader {
@@ -447,7 +447,7 @@ header .color-overlay {
 
 /* Header elements when loading finishes */
 .loaded .ip-loader {
-  opacity: 1;
+  opacity: 2;
 }
 
 @-webkit-keyframes animLoadedLogo {
@@ -505,8 +505,8 @@ header .color-overlay {
 }
 
 .sticky-navigation {
-  min-height: 40px;
-  background: #FFFFFF;
+  min-height: 30px;
+  background: #F0f0ff;
   opacity: 1;
   padding: 0 !important;
   margin-bottom: 0 !important;
@@ -516,7 +516,7 @@ header .color-overlay {
 }
 
 .sticky-navigation .navbar-header img {
-  max-height: 30px;
+  max-height: 24px;
   -webkit-backface-visibility: hidden;
 }
 
@@ -528,8 +528,8 @@ header .color-overlay {
 .sticky-navigation .main-navigation li a {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
-  font-weight: 700;
-  font-size: 10px;
+  font-weight: 900;
+  font-size: 12px;
   text-transform: uppercase;
 }
 
@@ -668,16 +668,16 @@ header .only-logo .navbar .navbar-header {
 }
 
 .carousel-indicators li {
-    margin: 0;
+    margin: 8px;
     width: 12px;
-    height: 4px;
-    border: 1px solid #000;
-    border-radius: 0px;
+    height: 6px;
+    border: 6px solid #fff;
+    border-radius: 50px;
     margin-bottom: 10%;
 }
 
  .carousel-indicators .active {
-    margin: 0;
+    margin: 8px;
     width: 12px;
     height: 4px;
     background-color: lightgray;
@@ -687,7 +687,7 @@ header .only-logo .navbar .navbar-header {
 
 .text-black-4{
   font-family: "Lato", sans-serif;
-  font-size: 90px;
+  font-size: 100px;
   letter-spacing: 3px;
   color: #000;
   font-weight: 300;
@@ -757,7 +757,7 @@ header .only-logo .navbar .navbar-header {
     top: 0;
     left: 0;
     z-index: 5;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.5);
     -webkit-backface-visibility: hidden;
 
 }
@@ -959,7 +959,7 @@ header .only-logo .navbar .navbar-header {
   color: #FFFFFF;
   //font-size: 100px;
   font-weight: 100;
-  letter-spacing: .1em;
+  letter-spacing: .2em;
 }
 
 
@@ -1116,8 +1116,8 @@ header .only-logo .navbar .navbar-header {
 
 .about-subtitle{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1125,18 +1125,18 @@ header .only-logo .navbar .navbar-header {
 .about-us a {
   font-size: 17px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 600;
   color: #000;
 }
 
 /* ACCORDION */
 
 .transition, .accordion ul li p, .accordion ul li i:before, .accordion ul li i:after {
-  transition: all 0.25s ease-in-out;
+  transition: all 4.0s ease-in-out;
 }
 
 .flipIn, h3, .accordion ul li {
-  animation: flipdown 0.5s ease both;
+  animation: flipdown 1.0s ease both;
 }
 
 .no-select, .accordion ul li h4 {
@@ -1378,12 +1378,12 @@ header .only-logo .navbar .navbar-header {
     margin-bottom: 5px;
 }
 .message{
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .testimonials .feedback .name {
     margin-top: 15px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .testimonials .feedback .company-info {
@@ -1449,8 +1449,8 @@ header .only-logo .navbar .navbar-header {
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.90);
     opacity: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 .component-hover .action-btn {
@@ -1462,8 +1462,8 @@ header .only-logo .navbar .navbar-header {
     -webkit-transform: translateY(45%);
     -ms-transform: translateY(45%);
     transform: translateY(45%);
-    -webkit-transition: all 0.3s 0.2s;
-    transition: all 0.3s 0.2s;
+    -webkit-transition: all 1s 1s;
+    transition: all 1s s;
     font-size: 35px;
 }
 
@@ -1492,7 +1492,7 @@ header .only-logo .navbar .navbar-header {
 .team-member:hover .component-hover,
 .team-member:hover .component-hover .desk,
 .team-member:hover .component-hover .s-link {
-    opacity: 1;
+    opacity: 1.7;
 }
 
 
@@ -2608,11 +2608,11 @@ GOOGLE MAP
 
 .footer-title{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  color: #ccc;
+  color: #fff;
 }
 
 .list-tweets li{
