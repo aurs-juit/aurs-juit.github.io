@@ -668,16 +668,16 @@ header .only-logo .navbar .navbar-header {
 }
 
 .carousel-indicators li {
-    margin: 8px;
+    margin: 0;
     width: 12px;
-    height: 6px;
-    border: 6px solid #fff;
-    border-radius: 50px;
+    height: 4px;
+    border: 1px solid #000;
+    border-radius: 0px;
     margin-bottom: 10%;
 }
 
  .carousel-indicators .active {
-    margin: 8px;
+    margin: 0;
     width: 12px;
     height: 4px;
     background-color: lightgray;
@@ -2608,11 +2608,11 @@ GOOGLE MAP
 
 .footer-title{
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: #ccc;
 }
 
 .list-tweets li{
